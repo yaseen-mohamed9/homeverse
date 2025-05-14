@@ -1103,6 +1103,45 @@
   .copyright a { display: inline-block; }
   
   .copyright a:is(:hover, :focus) { color: var(--orange-soda); }
+
+@media (max-width: 768px) {
+    .header-top .container,
+    .nav2 .container,
+    .About .container,
+    .hero .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-top__inner-left ul,
+    .header-top__inner-right,
+    .nav2 .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About .content,
+    .About .about-banner,
+    .hero-content,
+    .hero-banner {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .blog-card {
+        width: calc(50% - 20px);
+    }
+
+    .features-list > li {
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .blog-card {
+        width: 100%;
+    }
+  }
   
   
   
